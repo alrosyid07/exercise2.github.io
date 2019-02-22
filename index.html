@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator </title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="bootstrap.min.js" ></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- content -->
+	<div class="container">
+		<!-- calculator -->
+		<div class="frame">
+			<h2 class="text-center">Kalkulator JavaScript</h2>
+			<table class="board">
+				<!-- input bilangan1 -->
+				<tr>
+					<td colspan="5"><input type="text" id="bilangan1" class="input"/> </td>
+				</tr>
+				<!-- input bilangan1 akhir -->
+				<!-- input bilangan2 -->
+				<tr>
+					<td colspan="5"><input type="text" id="bilangan2" class="input"/></td>
+				</tr>
+				<!-- input bilanga2 akhir -->
+				<!-- fungsi operator -->
+				<tr>
+					<td><button class="btn" onclick=tambah(bilangan1.value,bilangan2.value)>+</button></td>
+					<td><button class="btn" onclick=kurang(bilangan1.value,bilangan2.value)>-</button></td>
+					<td><button class="btn opr" onclick=kali(bilangan1.value,bilangan2.value)>X</button></td>
+					<td><button class="btn opr" onclick=bagi(bilangan1.value,bilangan2.value)>/</button></td>
+				</tr>
+				<!-- fungsi operator akhir -->
+				<!-- output -->
+			    <tr>
+			    	<td colspan="5">
+			    		<h2 id="hasil" class="output">0</h2> 
+			    	</td>
+			    </tr>
+			    <!-- output akhir -->
+			</table>
+		</div>
+		<!-- calculator akhir -->
+	</div>
+	<!-- content akhir -->
+	<!-- footer -->
+	<footer>
+		<!-- aplikasi lain -->
+		<div class="col-sm-12 text-center other">
+	        <span>Lihat kalkulator lain</span>
+	    </div>
+		<ul class="col-sm-12 text-center">
+			<li><a href="index.html">Kalkulator</a></li>
+			<li><a href="calculatorv2.html">KalkulatorV2</a></li>
+		</ul>
+		<!-- aplikasi lain akhir -->
+		<div class="col-sm-12 text-center">
+	        <span>Copyright © 2019 alrosyid</span>
+	    </div>
+	</footer>
+	<!-- footer akhir -->
+
+	<!-- javascript -->
+	<script type="text/javascript" src="calculator.js"></script>
+	<!-- javascript -->
+</body>
+</html>
