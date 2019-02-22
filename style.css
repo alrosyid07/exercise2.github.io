@@ -74,6 +74,18 @@ td{
 	background-color: #2BAA52;
 }
 
+i a{
+	color: red;
+	font-weight: 800;
+}
+li a:hover{
+	color:green;
+	text-decoration: none;
+}
+.other span{
+	font-weight: 800;
+}
+
 @media(max-width: 768px){
 	.frame{
 		width: 100%;
